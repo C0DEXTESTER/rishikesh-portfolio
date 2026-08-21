@@ -2,7 +2,7 @@
 
 A personal developer portfolio built with **React 19** and **Vite**, featuring an interactive AI-style chat widget, animated project showcase, custom cursor, and a fully responsive glassmorphic UI.
 
-**Live demo:** _add your deployed URL here_
+**Live demo:** https://rishikesh-portfolio-tau.vercel.app/
 **Author:** Rishikesh Priyadarshi — BCA Student, Dev Sanskriti Vishwavidyalaya, Haridwar
 
 ---
