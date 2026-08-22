@@ -243,7 +243,7 @@ function App() {
           {showAllProjects && (
             <div className="project-card fade-in">
               <div className="project-content-left">
-                <div className="project-number">03</div>
+                <div className="project-number">02</div>
                 <h3>
                   <a href="https://democratic-insights.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
                     Democratic Insights
@@ -266,7 +266,7 @@ function App() {
           {/* Project 03 */}
           <div className="project-card">
             <div className="project-content-left">
-              <div className="project-number">02</div>
+              <div className="project-number">03</div>
               <h3>
                 <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
                   YogaConnect
