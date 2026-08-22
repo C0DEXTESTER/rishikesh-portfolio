@@ -217,7 +217,8 @@ function App() {
         </div>
 
         <div className="project-grid">
-          {/* Project 01 */}
+          
+          {/* Project 01: AI Research Paper (Always Visible) */}
           <div className="project-card">
             <div className="project-content-left">
               <div className="project-number">01</div>
@@ -239,51 +240,51 @@ function App() {
             </div>
           </div>
 
-{/* Project 02 (Democratic Insights) */}
+          {/* Project 02: Democratic Insights (Always Visible) */}
+          <div className="project-card">
+            <div className="project-content-left">
+              <div className="project-number">02</div>
+              <h3>
+                <a href="https://democratic-insights.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
+                  Democratic Insights
+                </a>
+              </h3>
+              <p className="tech-stack">HTML5 &middot; CSS3 &middot; JavaScript &middot; Python</p>
+              <p className="project-desc">
+                A comprehensive political consulting and public affairs web platform featuring modular service pages and Python automation scripts.
+              </p>
+              <a href="https://democratic-insights.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
+            </div>
+            <div className="project-image-right">
+              <a href="https://democratic-insights.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
+                <img src={democraticImage} alt="Democratic Insights Web Platform" className="project-screenshot" />
+              </a>
+            </div>
+          </div>
+
+          {/* Project 03: YogaConnect (Hidden behind "See More" button) */}
           {showAllProjects && (
             <div className="project-card fade-in">
               <div className="project-content-left">
-                <div className="project-number">02</div>
+                <div className="project-number">03</div>
                 <h3>
-                  <a href="https://democratic-insights.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
-                    Democratic Insights
+                  <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
+                    YogaConnect
                   </a>
                 </h3>
-                <p className="tech-stack">HTML5 &middot; CSS3 &middot; JavaScript &middot; Python</p>
+                <p className="tech-stack">WordPress &middot; CMS</p>
                 <p className="project-desc">
-                  A comprehensive political consulting and public affairs web platform featuring modular service pages and Python automation scripts[cite: 1].
+                  An interactive, community-focused platform designed to bridge traditional yoga knowledge with digital accessibility.
                 </p>
-                <a href="https://democratic-insights.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
+                <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
               </div>
               <div className="project-image-right">
-                <a href="https://democratic-insights.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
-                  <img src={democraticImage} alt="Democratic Insights Web Platform" className="project-screenshot" />
+                <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
+                  <img src={yogaImage} alt="YogaConnect Platform" className="project-screenshot" />
                 </a>
               </div>
             </div>
           )}
-
-          {/* Project 03 */}
-          <div className="project-card">
-            <div className="project-content-left">
-              <div className="project-number">03</div>
-              <h3>
-                <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
-                  YogaConnect
-                </a>
-              </h3>
-              <p className="tech-stack">WordPress &middot; CMS</p>
-              <p className="project-desc">
-                An interactive, community-focused platform designed to bridge traditional yoga knowledge with digital accessibility.
-              </p>
-              <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
-            </div>
-            <div className="project-image-right">
-              <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
-                <img src={yogaImage} alt="YogaConnect Platform" className="project-screenshot" />
-              </a>
-            </div>
-          </div>
           
         </div>
 
