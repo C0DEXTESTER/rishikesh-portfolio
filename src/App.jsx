@@ -118,7 +118,7 @@ function App() {
           <div className="hero-left">
             <div className="currently-building">
               <span className="pulse-dot"></span>
-              <span className="build-text">Currently Building: <strong>AI Research Assistant</strong></span>
+              <span className="build-text">Currently Building: <strong>Student Management System</strong></span>
             </div>
 
             <h1>
