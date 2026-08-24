@@ -275,7 +275,7 @@ function App() {
                       Student Management System
                     </a>
                   </h3>
-                  <p className="tech-stack">C &middot; Data Structures &middot; File Handling</p>
+                  <p className="tech-stack">React &middot; Vite &middot; Tailwind CSS &middot; Node.js &middot; Express.js &middot; JWT &middot; Tailwind CSS &middot; Node.js &middot; Express.js &middot; MongoDB</p>
                   <p className="project-desc">
                     A robust terminal-based application designed to efficiently manage student records, track academic progress, and streamline administrative data operations.
                   </p>
