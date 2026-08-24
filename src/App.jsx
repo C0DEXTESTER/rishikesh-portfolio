@@ -4,6 +4,7 @@ import './App.css';
 import aiImage from './assets/ai-project.png';
 import yogaImage from './assets/yoga-project.png';
 import democraticImage from './assets/democratic-project.png';
+import smsImage from './assets/SMS-project.png';
 import logoImage from './assets/logo.png';
 
 function App() {
@@ -285,6 +286,28 @@ function App() {
               </div>
             </div>
           )}
+
+          {/* Project 04: Student Management System (Hidden behind "See More" button) */}
+          <div className="project-card fade-in">
+            <div className="project-content-left">
+              <div className="project-number">04</div>
+              <h3>
+                <a href="https://student-management-system-rouge-nu.vercel.app/" rel="noreferrer" className="project-title-link">
+                  Student Management System
+                </a>
+              </h3>
+              <p className="tech-stack">React &middot; Vite &middot; Tailwind CSS &middot; Node.js &middot; Express.js &middot; MongoDB &middot; JWT &middot; Axios</p>
+              <p className="project-desc">
+                A robust terminal-based application designed to efficiently manage student records, track academic progress, and streamline administrative data operations.
+              </p>
+              <a href="https://student-management-system-rouge-nu.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
+            </div>
+            <div className="project-image-right">
+              <a href="https://student-management-system-rouge-nu.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
+                <img src={smsImage} alt="Student Management System" className="project-screenshot" />
+              </a>
+            </div>
+          </div>
           
         </div>
 
