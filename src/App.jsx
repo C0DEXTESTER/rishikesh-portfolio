@@ -293,7 +293,7 @@ function App() {
                 <div className="project-content-left">
                   <div className="project-number">04</div>
                   <h3>
-                    <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
+                    <a href="https://yogaconnects.wordpress.com/" target="_blank" rel="noreferrer" className="project-title-link">
                       YogaConnect
                     </a>
                   </h3>
@@ -301,10 +301,10 @@ function App() {
                   <p className="project-desc">
                     An interactive, community-focused platform designed to bridge traditional yoga knowledge with digital accessibility.
                   </p>
-                  <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
+                  <a href="https://yogaconnects.wordpress.com/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
                 </div>
                 <div className="project-image-right">
-                  <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
+                  <a href="https://yogaconnects.wordpress.com/" target="_blank" rel="noreferrer" className="image-wrapper-link">
                     <img src={yogaImage} alt="YogaConnect Platform" className="project-screenshot" />
                   </a>
                 </div>
