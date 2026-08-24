@@ -263,51 +263,54 @@ function App() {
             </div>
           </div>
 
-          {/* Project 03: YogaConnect (Hidden behind "See More" button) */}
+          {/* Hidden Projects (Revealed when "See More" is clicked) */}
           {showAllProjects && (
-            <div className="project-card fade-in">
-              <div className="project-content-left">
-                <div className="project-number">03</div>
-                <h3>
-                  <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
-                    YogaConnect
+            <>
+              {/* Project 03: Student Management System */}
+              <div className="project-card fade-in">
+                <div className="project-content-left">
+                  <div className="project-number">03</div>
+                  <h3>
+                    <a href="https://student-management-system-rouge-nu.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
+                      Student Management System
+                    </a>
+                  </h3>
+                  <p className="tech-stack">C &middot; Data Structures &middot; File Handling</p>
+                  <p className="project-desc">
+                    A robust terminal-based application designed to efficiently manage student records, track academic progress, and streamline administrative data operations.
+                  </p>
+                  <a href="https://student-management-system-rouge-nu.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
+                </div>
+                <div className="project-image-right">
+                  <a href="https://student-management-system-rouge-nu.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
+                    <img src={smsImage} alt="Student Management System" className="project-screenshot" />
                   </a>
-                </h3>
-                <p className="tech-stack">WordPress &middot; CMS</p>
-                <p className="project-desc">
-                  An interactive, community-focused platform designed to bridge traditional yoga knowledge with digital accessibility.
-                </p>
-                <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
+                </div>
               </div>
-              <div className="project-image-right">
-                <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
-                  <img src={yogaImage} alt="YogaConnect Platform" className="project-screenshot" />
-                </a>
-              </div>
-            </div>
-          )}
 
-          {/* Project 04: Student Management System (Hidden behind "See More" button) */}
-          <div className="project-card fade-in">
-            <div className="project-content-left">
-              <div className="project-number">04</div>
-              <h3>
-                <a href="https://student-management-system-rouge-nu.vercel.app/" rel="noreferrer" className="project-title-link">
-                  Student Management System
-                </a>
-              </h3>
-              <p className="tech-stack">React &middot; Vite &middot; Tailwind CSS &middot; Node.js &middot; Express.js &middot; MongoDB &middot; JWT &middot; Axios</p>
-              <p className="project-desc">
-                A robust terminal-based application designed to efficiently manage student records, track academic progress, and streamline administrative data operations.
-              </p>
-              <a href="https://student-management-system-rouge-nu.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
-            </div>
-            <div className="project-image-right">
-              <a href="https://student-management-system-rouge-nu.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
-                <img src={smsImage} alt="Student Management System" className="project-screenshot" />
-              </a>
-            </div>
-          </div>
+              {/* Project 04: YogaConnect */}
+              <div className="project-card fade-in">
+                <div className="project-content-left">
+                  <div className="project-number">04</div>
+                  <h3>
+                    <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
+                      YogaConnect
+                    </a>
+                  </h3>
+                  <p className="tech-stack">WordPress &middot; CMS</p>
+                  <p className="project-desc">
+                    An interactive, community-focused platform designed to bridge traditional yoga knowledge with digital accessibility.
+                  </p>
+                  <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
+                </div>
+                <div className="project-image-right">
+                  <a href="https://yogaconnect.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
+                    <img src={yogaImage} alt="YogaConnect Platform" className="project-screenshot" />
+                  </a>
+                </div>
+              </div>
+            </>
+          )}
           
         </div>
 
