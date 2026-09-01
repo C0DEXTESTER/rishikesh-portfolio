@@ -5,6 +5,7 @@ import aiImage from './assets/ai-project.png';
 import yogaImage from './assets/yoga-project.png';
 import democraticImage from './assets/democratic-project.png';
 import smsImage from './assets/SMS-project.png';
+import campusImage from './assets/CampusSaarthi.png';
 import logoImage from './assets/logo.png';
 
 function App() {
@@ -88,6 +89,49 @@ function App() {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const projectsData = [
+    {
+      id: "01",
+      title: "AI Research Paper Similarity Detector",
+      link: "https://researchguard-ai-0n7j.onrender.com/",
+      techStack: "Python · Flask · NLP · Embeddings",
+      description: "An AI-powered application that compares research papers and identifies semantically similar content to detect duplicates.",
+      image: aiImage
+    },
+    {
+      id: "02",
+      title: "CampusSaarthi",
+      link: "https://campussaarthi.vercel.app/",
+      techStack: "React · Vite · Firebase · Node.js · Vanilla CSS",
+      description: "A comprehensive campus lost and found system where students can report lost items and find found items, student-to-student, with real-time notifications and a user-friendly interface.",
+      image: campusImage
+    },
+    {
+      id: "03",
+      title: "Democratic Insights",
+      link: "https://democratic-insights.vercel.app/",
+      techStack: "HTML5 · CSS3 · JavaScript · Python",
+      description: "A comprehensive political consulting and public affairs web platform featuring modular service pages and Python automation scripts.",
+      image: democraticImage
+    },
+    {
+      id: "04",
+      title: "Student Management System",
+      link: "https://student-management-system-rouge-nu.vercel.app/",
+      techStack: "React · Vite · Tailwind CSS · Node.js · Express.js · JWT · MongoDB",
+      description: "A robust terminal-based application designed to efficiently manage student records, track academic progress, and streamline administrative data operations.",
+      image: smsImage
+    },
+    {
+      id: "05",
+      title: "YogaConnect",
+      link: "https://yogaconnects.wordpress.com/",
+      techStack: "WordPress · CMS",
+      description: "An interactive, community-focused platform designed to bridge traditional yoga knowledge with digital accessibility.",
+      image: yogaImage
+    }
+  ];
 
   return (
     <main>
@@ -218,100 +262,31 @@ function App() {
         </div>
 
         <div className="project-grid">
-          
-          {/* Project 01: AI Research Paper (Always Visible) */}
-          <div className="project-card">
-            <div className="project-content-left">
-              <div className="project-number">01</div>
-              <h3>
-                <a href="https://researchguard-ai-0n7j.onrender.com/" target="_blank" rel="noreferrer" className="project-title-link">
-                  AI Research Paper Similarity Detector
-                </a>
-              </h3>
-              <p className="tech-stack">Python &middot; Flask &middot; NLP &middot; Embeddings</p>
-              <p className="project-desc">
-                An AI-powered application that compares research papers and identifies semantically similar content to detect duplicates.
-              </p>
-              <a href="https://researchguard-ai-0n7j.onrender.com/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
-            </div>
-            <div className="project-image-right">
-              <a href="https://researchguard-ai-0n7j.onrender.com/" target="_blank" rel="noreferrer" className="image-wrapper-link">
-                <img src={aiImage} alt="AI Research Paper Similarity Detector" className="project-screenshot" />
-              </a>
-            </div>
-          </div>
+          {projectsData.map((project, index) => {
+            // This hides projects 3 and 4 when the button hasn't been clicked
+            if (!showAllProjects && index >= 2) return null;
 
-          {/* Project 02: Democratic Insights (Always Visible) */}
-          <div className="project-card">
-            <div className="project-content-left">
-              <div className="project-number">02</div>
-              <h3>
-                <a href="https://democratic-insights.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
-                  Democratic Insights
-                </a>
-              </h3>
-              <p className="tech-stack">HTML5 &middot; CSS3 &middot; JavaScript &middot; Python</p>
-              <p className="project-desc">
-                A comprehensive political consulting and public affairs web platform featuring modular service pages and Python automation scripts.
-              </p>
-              <a href="https://democratic-insights.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
-            </div>
-            <div className="project-image-right">
-              <a href="https://democratic-insights.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
-                <img src={democraticImage} alt="Democratic Insights Web Platform" className="project-screenshot" />
-              </a>
-            </div>
-          </div>
-
-          {/* Hidden Projects (Revealed when "See More" is clicked) */}
-          {showAllProjects && (
-            <>
-              {/* Project 03: Student Management System */}
-              <div className="project-card fade-in">
+            return (
+              <div key={project.id} className={`project-card ${index >= 2 ? 'fade-in' : ''}`}>
                 <div className="project-content-left">
-                  <div className="project-number">03</div>
+                  <div className="project-number">{project.id}</div>
                   <h3>
-                    <a href="https://student-management-system-rouge-nu.vercel.app/" target="_blank" rel="noreferrer" className="project-title-link">
-                      Student Management System
+                    <a href={project.link} target="_blank" rel="noreferrer" className="project-title-link">
+                      {project.title}
                     </a>
                   </h3>
-                  <p className="tech-stack">React &middot; Vite &middot; Tailwind CSS &middot; Node.js &middot; Express.js &middot; JWT &middot; MongoDB</p>
-                  <p className="project-desc">
-                    A robust terminal-based application designed to efficiently manage student records, track academic progress, and streamline administrative data operations.
-                  </p>
-                  <a href="https://student-management-system-rouge-nu.vercel.app/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
+                  <p className="tech-stack">{project.techStack}</p>
+                  <p className="project-desc">{project.description}</p>
+                  <a href={project.link} target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
                 </div>
                 <div className="project-image-right">
-                  <a href="https://student-management-system-rouge-nu.vercel.app/" target="_blank" rel="noreferrer" className="image-wrapper-link">
-                    <img src={smsImage} alt="Student Management System" className="project-screenshot" />
+                  <a href={project.link} target="_blank" rel="noreferrer" className="image-wrapper-link">
+                    <img src={project.image} alt={project.title} className="project-screenshot" />
                   </a>
                 </div>
               </div>
-
-              {/* Project 04: YogaConnect */}
-              <div className="project-card fade-in">
-                <div className="project-content-left">
-                  <div className="project-number">04</div>
-                  <h3>
-                    <a href="https://yogaconnects.wordpress.com/" target="_blank" rel="noreferrer" className="project-title-link">
-                      YogaConnect
-                    </a>
-                  </h3>
-                  <p className="tech-stack">WordPress &middot; CMS</p>
-                  <p className="project-desc">
-                    An interactive, community-focused platform designed to bridge traditional yoga knowledge with digital accessibility.
-                  </p>
-                  <a href="https://yogaconnects.wordpress.com/" target="_blank" rel="noreferrer" className="project-link">View Project ↗</a>
-                </div>
-                <div className="project-image-right">
-                  <a href="https://yogaconnects.wordpress.com/" target="_blank" rel="noreferrer" className="image-wrapper-link">
-                    <img src={yogaImage} alt="YogaConnect Platform" className="project-screenshot" />
-                  </a>
-                </div>
-              </div>
-            </>
-          )}
-          
+            );
+          })}
         </div>
 
         {/* SEE MORE BUTTON */}
