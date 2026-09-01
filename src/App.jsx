@@ -163,7 +163,7 @@ function App() {
           <div className="hero-left">
             <div className="currently-building">
               <span className="pulse-dot"></span>
-              <span className="build-text">Currently Building: <strong>Student Management System</strong></span>
+              <span className="build-text">Currently Building: <strong>CampusSaarthi WebApp</strong></span>
             </div>
 
             <h1>
